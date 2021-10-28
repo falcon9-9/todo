@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css?family=Gochi+Hand');
+
+* {
+    /*padding: 0;*/
+    /*margin: 10px;*/
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+body {
+    margin: 20px;
+    color: #333;
+    font-family: 'Gochi Hand', cursive;
+}
+
+nav {
+    margin: 20px 0;
+}
+
+nav a {
+    padding: 0 10px;
+    color: #1a1a1a;
+}
+
+nav .active {
+    color: #0084ff;
+}
+
+ul {
+    padding: 20px 0;
+}
+
+.todo-cell {
+    width: 400px;
+    padding: 5px;
+    margin: 10px 0;
+    border: 1px solid #d6d6d6;
+    border-radius: 5px;
+}
+
+.todo-cell:hover {
+    border: 1px solid #999;
+}
+
+.todo-complete {
+    position: relative;
+    border-color: #0070c9;
+}
+
+.todo-complete::after {
+    content: '✓';
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    color: #61dafb;
+    transform: translateY(-50%);
+}
+
+button {
+    margin: 0 4px;
+    padding: 0 14px;
+    line-height: 32px;
+    color: #232323;
+    background: #EBF3FF;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    outline: none;
+    font-family: 'Gochi Hand', cursive;
+}
+
+button:hover {
+    background: #F5F9FF;
+    cursor: pointer;
+}
+
+.input-todo {
+    height: 32px;
+    padding: 0 12px;
+    margin: 0 5px;
+    border: 1px solid #eee;
+    outline: none;
+    border-radius: 3px;
+    box-sizing: border-box;
+}
+
+.input-todo:focus {
+    border: 1px solid #61dafb;
+}
+
+a {
+    color: #333;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #175199;
+}
+
+.todo-counter p {
+    font-size: 24px;
+}
+
+.todo-table {
+    display: table;
+    margin: 10px 0 30px;
+}
+
+.todo-row {
+    display: table-row;
+}
+
+.todo-row:not(:first-child) {
+    margin-top: -1px;
+}
+
+.cell {
+    display: table-cell;
+    width: 100px;
+    text-align: center;
+    border: 1px solid #eee;
+}
+
+h3 {
+    color: #494a4b;
+    font-size: 130%;
+    margin-left: 50px;
+}
+
+.heading {
+    display: flex;
+    align-items: center;
+    /*justify-content: center;*/
+    margin-bottom: 1rem;
+    margin-left: 50px;
+}
+.heading__title {
+    transform: rotate(2deg);
+    padding: 0.2rem 1.2rem;
+    border-radius: 20% 5% 20% 5%/5% 20% 25% 20%;
+    background-color: hsla(166, 100%, 50%, 0.7);
+    font-size: 1.5rem;
+}
+
+.heading__img {
+    width: 10%;
+    height: 10%;
+}
+
+.slogan {
+    margin-left: 60px;
+    margin-top: 20px;
+    font-size: 25px;
+}
+
+.clock {
+    /*font-family: 'PingFang SC', 'Microsoft Yahei', sans-serif;*/
+    margin-left: 100px;
+    font-size: 25px;
+}
+
+#container{
+    /*position: absolute;*/
+    /*top: 0;*/
+    /*left: 0;*/
+    /*right: 0;*/
+    /*bottom: 0;*/
+    margin: 20px;
+    width: 260px;
+    height: 260px;
+    border-radius: 5px;
+    /*font-family: 'Open Sans Condensed', sans-serif;*/
+    /*background: rgba(3,3,3,0.25);*/
+    /*box-shadow: 1px 1px 50px #000;*/
+    /*display: none;*/
+}
+
+#container h1{
+    /*font-family: 'Open Sans Condensed', sans-serif;*/
+    position: relative;
+    margin-top: 0px;
+    text-align: center;
+    font-size: 40px;
+    color: #ddd;
+    /*text-shadow: 3px 3px 10px #000;*/
+}
+
+#container a, .input-login{
+    font-family: 'Open Sans Condensed', sans-serif;
+    text-decoration: none;
+    position: relative;
+    width: 80%;
+    display: block;
+    margin: 9px auto;
+    font-size: 15px;
+    color: #fff;
+    padding: 8px;
+    border-radius: 6px;
+    border: none;
+    background: rgba(3,3,3,.1);
+    -webkit-transition: all 2s ease-in-out;
+    -moz-transition: all 2s ease-in-out;
+    -o-transition: all 2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+
+#container .input-login:focus{
+    outline: none;
+    box-shadow: 3px 3px 10px #333;
+    background: rgba(3,3,3,.18);
+}
+
+
+#container a{
+    /*font-family: 'Open Sans Condensed', sans-serif;*/
+    text-align: center;
+    padding: 4px 8px;
+    background: rgba(107,255,3,0.3);
+}
+
+#container a:hover{
+    opacity: 0.7;
+}
+
+
+
+
